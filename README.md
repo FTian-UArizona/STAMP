@@ -74,7 +74,7 @@ All mechanism implementations live in `functions.py`. At a high level:
   * Given a context, a question, and a tokenizer/embedding table, STAMP:
 
     1. Assigns tokens to **four groups** based on sensitivity (NER/PII) and task-importance (embedding similarity to a task representation).
-    2. Maps each group to a **per-token ε** (e.g., (\epsilon_{G1}:\epsilon_{G2}:\epsilon_{G3}:\epsilon_{G4} = 2:1:4:3) × base (\bar{\epsilon})).
+    2. Maps each group to a **per-token ε**.
     3. Calls the chosen perturbation mechanism **per token** with the corresponding ε.
   * There are variants for:
 
