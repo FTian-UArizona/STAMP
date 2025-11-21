@@ -25,7 +25,7 @@ from collections import Counter
 
 # Remove this atfer
 from openai import OpenAI
-client = OpenAI(api_key="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")  # needs OPENAI_API_KEY
+client = OpenAI(api_key="Your_API_Key")  # needs OPENAI_API_KEY
 
 
 # --- Load tokenizer and GPT-2 model ---
