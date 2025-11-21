@@ -1,0 +1,660 @@
+{
+  "version": "v1.0",
+  "data": [
+    {
+      "title": "FantasySQuAD",
+      "paragraphs": [
+        {
+          "context": "Dusk settled over Caldrith, its streets painted in amber light as vendors shuttered their stalls. Ilya walked slowly with a bundle marked ZX-14 hidden under his cloak, while Soren kept close, watching the crowds with cautious eyes. The banners of the Consortium fluttered faintly in the rising wind, carrying the scent of sea salt inland. Children\u2019s laughter rang out from a distant courtyard, though it seemed oddly fragile in the heavy air. Ilya\u2019s boots echoed against the stone, each step louder than he expected, as though the city itself demanded attention. Soren muttered that some nights wore the weight of secrets more heavily than others. Caldrith\u2019s lamps flickered to life, one by one, until the entire square glowed with a light that seemed both welcoming and suspicious, a paradox that clung to every face passing by.",
+          "qas": [
+            {
+              "id": "q1",
+              "question": "What mood is suggested by the echo of footsteps on stone?",
+              "answers": {
+                "text": [
+                  "attention"
+                ],
+                "answer_start": [
+                  258
+                ]
+              }
+            },
+            {
+              "id": "q2",
+              "question": "How does the children\u2019s laughter feel in the heavy air?",
+              "answers": {
+                "text": [
+                  "fragile"
+                ],
+                "answer_start": [
+                  199
+                ]
+              }
+            },
+            {
+              "id": "q3",
+              "question": "What contrast appears once the lamps begin to glow?",
+              "answers": {
+                "text": [
+                  "suspicious"
+                ],
+                "answer_start": [
+                  390
+                ]
+              }
+            },
+            {
+              "id": "q4",
+              "question": "What burden is carried by certain nights according to the passage?",
+              "answers": {
+                "text": [
+                  "secrets"
+                ],
+                "answer_start": [
+                  315
+                ]
+              }
+            },
+            {
+              "id": "q5",
+              "question": "What element of the wind carries reminders of the sea?",
+              "answers": {
+                "text": [
+                  "salt"
+                ],
+                "answer_start": [
+                  168
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "context": "Rain slicked the walls of Orvallis, making its alleys shimmer like dark mirrors. Danae pulled her cloak tight, holding a parchment stamped KQ-92, while Thalen scouted ahead for signs of the Covenant\u2019s patrols. The drizzle carried the scent of iron, mingling with the smoke of taverns still burning late into the evening. Danae whispered that the city never truly slept, only pretended in brief pauses. Thalen pointed to lanterns glowing faintly in shuttered windows, claiming they were messages meant only for those who knew how to read them. The stone underfoot was uneven, slick with moss, and every step felt uncertain. Orvallis seemed to lean inward, its architecture crowding travelers as though testing their resolve with each narrow turn into the night.",
+          "qas": [
+            {
+              "id": "q6",
+              "question": "What quality of the city is described in relation to sleep?",
+              "answers": {
+                "text": [
+                  "slept"
+                ],
+                "answer_start": [
+                  240
+                ]
+              }
+            },
+            {
+              "id": "q7",
+              "question": "What smell mixed with smoke in the drizzle?",
+              "answers": {
+                "text": [
+                  "iron"
+                ],
+                "answer_start": [
+                  159
+                ]
+              }
+            },
+            {
+              "id": "q8",
+              "question": "What hidden meaning was suggested by faint lanterns?",
+              "answers": {
+                "text": [
+                  "messages"
+                ],
+                "answer_start": [
+                  299
+                ]
+              }
+            },
+            {
+              "id": "q9",
+              "question": "How did each step across the mossy stones feel?",
+              "answers": {
+                "text": [
+                  "uncertain"
+                ],
+                "answer_start": [
+                  383
+                ]
+              }
+            },
+            {
+              "id": "q10",
+              "question": "What effect did the city\u2019s architecture have on travelers?",
+              "answers": {
+                "text": [
+                  "resolve"
+                ],
+                "answer_start": [
+                  441
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "context": "Morning fog rolled across Thryne\u2019s docks, blurring the line between water and sky. Kael carried a wooden chest branded QR-51, while Miren followed, her eyes sharp for signs of the Guild\u2019s enforcers. The gulls circled overhead, their cries lost in the muffled air, while ropes groaned against mooring posts. Kael muttered that the fog was not simply weather, but a veil meant to hide more than waves. Miren pointed to ships looming like phantoms, their hulls dripping with condensation. Thryne\u2019s lighthouse burned faintly in the distance, a beacon dimmed by mist yet insistent in its presence. Each step across the damp boards seemed a wager, the docks themselves groaning as though complicit in some unspoken pact.",
+          "qas": [
+            {
+              "id": "q11",
+              "question": "What function does the fog serve beyond weather?",
+              "answers": {
+                "text": [
+                  "veil"
+                ],
+                "answer_start": [
+                  261
+                ]
+              }
+            },
+            {
+              "id": "q12",
+              "question": "How were the distant ships described in the mist?",
+              "answers": {
+                "text": [
+                  "phantoms"
+                ],
+                "answer_start": [
+                  308
+                ]
+              }
+            },
+            {
+              "id": "q13",
+              "question": "What sound came from the ropes at the docks?",
+              "answers": {
+                "text": [
+                  "groaned"
+                ],
+                "answer_start": [
+                  189
+                ]
+              }
+            },
+            {
+              "id": "q14",
+              "question": "What role did the lighthouse play despite the mist?",
+              "answers": {
+                "text": [
+                  "beacon"
+                ],
+                "answer_start": [
+                  354
+                ]
+              }
+            },
+            {
+              "id": "q15",
+              "question": "What did each step across the boards resemble?",
+              "answers": {
+                "text": [
+                  "wager"
+                ],
+                "answer_start": [
+                  394
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "context": "High above the cliffs of Draemir, the wind carried the cries of ravens. Selwyn climbed the rocky path, clutching a satchel labeled DT-08, while Aera walked beside him, wary of the Order\u2019s watchful eyes. The sea roared far below, its spray reaching even the high ridges. Selwyn paused to remark that every step upward felt like ascending into judgment. Aera pointed toward cairns built along the trail, markers left by those who had come before. Draemir\u2019s fortress loomed at the peak, its walls black against the sky, and within them burned torches that flickered with restless energy. The climb tested not only breath but resolve, each stone demanding its toll from the two who pressed onward.",
+          "qas": [
+            {
+              "id": "q16",
+              "question": "What comparison was made about the difficulty of climbing?",
+              "answers": {
+                "text": [
+                  "judgment"
+                ],
+                "answer_start": [
+                  223
+                ]
+              }
+            },
+            {
+              "id": "q17",
+              "question": "What birds\u2019 cries echoed across the cliffs?",
+              "answers": {
+                "text": [
+                  "ravens"
+                ],
+                "answer_start": [
+                  52
+                ]
+              }
+            },
+            {
+              "id": "q18",
+              "question": "What did the cairns along the trail represent?",
+              "answers": {
+                "text": [
+                  "markers"
+                ],
+                "answer_start": [
+                  260
+                ]
+              }
+            },
+            {
+              "id": "q19",
+              "question": "How were the fortress walls described against the sky?",
+              "answers": {
+                "text": [
+                  "black"
+                ],
+                "answer_start": [
+                  309
+                ]
+              }
+            },
+            {
+              "id": "q20",
+              "question": "What did each stone seem to demand from travelers?",
+              "answers": {
+                "text": [
+                  "toll"
+                ],
+                "answer_start": [
+                  407
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "context": "Twilight filled the alleys of Brastel, shadows stretching thin against worn walls. Corin held tight to a scroll imprinted YH-73, while Elira scanned doorways for symbols linked to the Assembly. The air smelled of smoke and damp clay, and footsteps echoed too loudly for comfort. Corin whispered that secrets always multiplied in silence, while Elira countered that silence itself was often the loudest warning. Brastel\u2019s square flickered with torchlight, sparks rising into the darkening sky. Each corner felt like an interrogation, every stone pressing its question. The city wrapped them in tension, holding breath for an answer no one wished to give.",
+          "qas": [
+            {
+              "id": "q21",
+              "question": "How did the footsteps sound in the quiet alleys?",
+              "answers": {
+                "text": [
+                  "loudly"
+                ],
+                "answer_start": [
+                  166
+                ]
+              }
+            },
+            {
+              "id": "q22",
+              "question": "What quality did secrets gain in silence?",
+              "answers": {
+                "text": [
+                  "multiplied"
+                ],
+                "answer_start": [
+                  207
+                ]
+              }
+            },
+            {
+              "id": "q23",
+              "question": "What was silence described as being able to provide?",
+              "answers": {
+                "text": [
+                  "warning"
+                ],
+                "answer_start": [
+                  253
+                ]
+              }
+            },
+            {
+              "id": "q24",
+              "question": "How did the square appear beneath torchlight?",
+              "answers": {
+                "text": [
+                  "flickered"
+                ],
+                "answer_start": [
+                  287
+                ]
+              }
+            },
+            {
+              "id": "q25",
+              "question": "What did the city seem to hold in suspense?",
+              "answers": {
+                "text": [
+                  "breath"
+                ],
+                "answer_start": [
+                  378
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "context": "Frost glazed the streets of Myrrith, each breath clouding in the morning chill. Orrin carried a small coffer carved with LP-29, while Sela walked beside him, watching for the Dominion\u2019s banners along the towers. The sound of bells rang brittle in the cold, and even voices seemed to fracture into shards of air. Orrin remarked that winter made truth harder to tell, each word freezing before it could take form. Sela pointed toward the market square, its fountain rimmed with ice, claiming the city\u2019s heart never truly thawed. Myrrith glimmered faintly under pale sunlight, its edges sharp as glass and just as fragile.",
+          "qas": [
+            {
+              "id": "q26",
+              "question": "What happened to voices in the brittle cold?",
+              "answers": {
+                "text": [
+                  "fracture"
+                ],
+                "answer_start": [
+                  204
+                ]
+              }
+            },
+            {
+              "id": "q27",
+              "question": "What did words do before they could take form?",
+              "answers": {
+                "text": [
+                  "freezing"
+                ],
+                "answer_start": [
+                  252
+                ]
+              }
+            },
+            {
+              "id": "q28",
+              "question": "What feature of the fountain revealed frost?",
+              "answers": {
+                "text": [
+                  "ice"
+                ],
+                "answer_start": [
+                  312
+                ]
+              }
+            },
+            {
+              "id": "q29",
+              "question": "How was the city\u2019s heart described in relation to thawing?",
+              "answers": {
+                "text": [
+                  "thawed"
+                ],
+                "answer_start": [
+                  334
+                ]
+              }
+            },
+            {
+              "id": "q30",
+              "question": "How did the city appear under pale sunlight?",
+              "answers": {
+                "text": [
+                  "glimmered"
+                ],
+                "answer_start": [
+                  352
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "context": "Lanterns burned low in the courtyards of Eryndel, their flames bending in the night wind. Jarek carried a chest sealed with NM-47, while Liora trailed behind, wary of the Syndicate\u2019s spies rumored to haunt the city. The stones underfoot gleamed with dew, and the air felt thick with expectation. Jarek said the silence here pressed closer than walls, while Liora murmured that silence was sometimes the only guide. Eryndel\u2019s towers rose like sentinels above them, their outlines etched against a sky swollen with clouds. Each street seemed like a question, every corner bending toward hidden answers.",
+          "qas": [
+            {
+              "id": "q31",
+              "question": "How did the flames respond to the night wind?",
+              "answers": {
+                "text": [
+                  "bending"
+                ],
+                "answer_start": [
+                  67
+                ]
+              }
+            },
+            {
+              "id": "q32",
+              "question": "What pressed closer than walls in the courtyards?",
+              "answers": {
+                "text": [
+                  "silence"
+                ],
+                "answer_start": [
+                  229
+                ]
+              }
+            },
+            {
+              "id": "q33",
+              "question": "What was silence suggested to provide as guidance?",
+              "answers": {
+                "text": [
+                  "guide"
+                ],
+                "answer_start": [
+                  268
+                ]
+              }
+            },
+            {
+              "id": "q34",
+              "question": "To what were the towers compared in their stance?",
+              "answers": {
+                "text": [
+                  "sentinels"
+                ],
+                "answer_start": [
+                  293
+                ]
+              }
+            },
+            {
+              "id": "q35",
+              "question": "How was the sky described under the weight of clouds?",
+              "answers": {
+                "text": [
+                  "swollen"
+                ],
+                "answer_start": [
+                  331
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "context": "In the canyon of Zareth, shadows stretched long across jagged stone. Malen gripped a staff etched with VC-61, while Ayra walked ahead, alert for the Brotherhood\u2019s hidden scouts. The wind funneled through narrow walls, carrying the scent of dust and fire. Malen muttered that the canyon was a mouth ready to speak, though its words would be ruin. Ayra glanced upward at the stars, scattered and pale above the rock, and said they looked like warnings rather than lights. Zareth\u2019s echoes multiplied each sound, each footstep rebounding as though the cliffs themselves questioned their passage.",
+          "qas": [
+            {
+              "id": "q36",
+              "question": "What scents were carried by the wind in the canyon?",
+              "answers": {
+                "text": [
+                  "dust"
+                ],
+                "answer_start": [
+                  167
+                ]
+              }
+            },
+            {
+              "id": "q37",
+              "question": "How was the canyon metaphorically described?",
+              "answers": {
+                "text": [
+                  "mouth"
+                ],
+                "answer_start": [
+                  199
+                ]
+              }
+            },
+            {
+              "id": "q38",
+              "question": "What were the stars compared to above the cliffs?",
+              "answers": {
+                "text": [
+                  "warnings"
+                ],
+                "answer_start": [
+                  267
+                ]
+              }
+            },
+            {
+              "id": "q39",
+              "question": "What happened to each sound within the canyon?",
+              "answers": {
+                "text": [
+                  "multiplied"
+                ],
+                "answer_start": [
+                  318
+                ]
+              }
+            },
+            {
+              "id": "q40",
+              "question": "What did the cliffs seem to do to travelers\u2019 passage?",
+              "answers": {
+                "text": [
+                  "questioned"
+                ],
+                "answer_start": [
+                  361
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "context": "The gardens of Solyra gleamed under starlight, each leaf tipped with dew like crystal. Naren carried a case engraved JT-84, while Evra lingered behind, scanning for the Dominion\u2019s quiet agents among the hedges. A fountain whispered in the center, its waters catching moonlight in silver arcs. Naren remarked that gardens remembered promises, while Evra replied that promises grew brittle in the night. Solyra\u2019s hedges towered like walls, leading them through pathways that seemed both intimate and endless, each step folding into silence that carried its own hidden story.",
+          "qas": [
+            {
+              "id": "q41",
+              "question": "How did the leaves sparkle beneath starlight?",
+              "answers": {
+                "text": [
+                  "crystal"
+                ],
+                "answer_start": [
+                  77
+                ]
+              }
+            },
+            {
+              "id": "q42",
+              "question": "What sound was made by the fountain\u2019s waters?",
+              "answers": {
+                "text": [
+                  "whispered"
+                ],
+                "answer_start": [
+                  178
+                ]
+              }
+            },
+            {
+              "id": "q43",
+              "question": "What did gardens symbolically hold?",
+              "answers": {
+                "text": [
+                  "promises"
+                ],
+                "answer_start": [
+                  229
+                ]
+              }
+            },
+            {
+              "id": "q44",
+              "question": "What did promises become in the night?",
+              "answers": {
+                "text": [
+                  "brittle"
+                ],
+                "answer_start": [
+                  269
+                ]
+              }
+            },
+            {
+              "id": "q45",
+              "question": "What dual feeling did the pathways evoke?",
+              "answers": {
+                "text": [
+                  "endless"
+                ],
+                "answer_start": [
+                  324
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "context": "Snow muffled the valley of Kyrith, where torches burned faintly along frozen paths. Fenric dragged a sled carrying HR-66, while Maela followed, wary of the Tribunal\u2019s hunters said to roam nearby. The cold gnawed at their hands, turning breath to fog. Fenric muttered that winter always stripped lies bare, while Maela insisted it stripped hope as well. Kyrith\u2019s mountains loomed in silence, their peaks sharp as blades against a sky drained of color. Each crunch of snow underfoot sounded final, as though the valley measured each step against some unspoken ledger.",
+          "qas": [
+            {
+              "id": "q46",
+              "question": "What effect did the snow have on all sound?",
+              "answers": {
+                "text": [
+                  "muffled"
+                ],
+                "answer_start": [
+                  10
+                ]
+              }
+            },
+            {
+              "id": "q47",
+              "question": "What did the cold turn every breath into?",
+              "answers": {
+                "text": [
+                  "fog"
+                ],
+                "answer_start": [
+                  164
+                ]
+              }
+            },
+            {
+              "id": "q48",
+              "question": "What truth did winter reveal according to the passage?",
+              "answers": {
+                "text": [
+                  "lies"
+                ],
+                "answer_start": [
+                  197
+                ]
+              }
+            },
+            {
+              "id": "q49",
+              "question": "What else did winter remove besides lies?",
+              "answers": {
+                "text": [
+                  "hope"
+                ],
+                "answer_start": [
+                  237
+                ]
+              }
+            },
+            {
+              "id": "q50",
+              "question": "How did the crunch of snow underfoot sound?",
+              "answers": {
+                "text": [
+                  "final"
+                ],
+                "answer_start": [
+                  333
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
