@@ -98,14 +98,7 @@ The notebooks show concrete usage examples of these functions.
   STAMP operates in a **local** (per-token) privacy regime, with moderate-to-large ε values typical for DP text-rewriting work, because very small ε in high-dimensional embedding spaces destroys utility after decoding.
 
 * **Group-wise budgets:**
-  The default group profile:
-
-  [
-  \epsilon_{G1} : \epsilon_{G2} : \epsilon_{G3} : \epsilon_{G4}
-  = 2 : 1 : 4 : 3 \quad (\text{all scaled by } \bar{\epsilon})
-  ]
-
-  is a simple monotone instantiation reflecting the ordering:
+  The default group profile is a simple monotone instantiation reflecting the ordering:
 
   > “Protect sensitive & task-unimportant tokens most; non-sensitive & task-important tokens least.”
 
