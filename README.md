@@ -49,7 +49,7 @@ The notebooks use standard HuggingFace datasets plus one synthetic file:
 * **Yelp**: loaded via `datasets.load_dataset("yelp")`
 * **SQuAD / FantasySQuAD**:
 
-  * `fantasy_squad.json` from this repo, which follows the SQuAD format and can be loaded via:
+  * `fantasy_squad.json` from this repo, which follows the SQuAD format
 
    
 
