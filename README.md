@@ -92,7 +92,7 @@ The notebooks show concrete usage examples of these functions.
 ## Notes on privacy and parameters
 
 * **Metric-LDP:**
-  Both Polar and Laplace mechanisms are calibrated to satisfy (\epsilon)-metric-LDP with respect to a distance on embeddings (Euclidean for Laplace, geodesic/angle on the sphere for Polar).
+  Both Polar and Laplace mechanisms are calibrated to satisfy (ε)-metric-LDP with respect to a distance on embeddings (Euclidean for Laplace, geodesic/angle on the sphere for Polar).
 
 * **Per-token ε vs. global ε:**
   STAMP operates in a **local** (per-token) privacy regime, with moderate-to-large ε values typical for DP text-rewriting work, because very small ε in high-dimensional embedding spaces destroys utility after decoding.
@@ -102,15 +102,5 @@ The notebooks show concrete usage examples of these functions.
 
   > “Protect sensitive & task-unimportant tokens most; non-sensitive & task-important tokens least.”
 
-  Users are free to change this profile; STAMP only requires a **relative ordering** and a base scale (\bar{\epsilon}).
+  Users are free to change this profile; STAMP only requires a **relative ordering** and a base scale.
 
-## Contact / issues
-
-This repository is provided as an **anonymous artifact** for peer review.
-If you encounter reproducibility issues or bugs while evaluating the paper, please include:
-
-* The environment (OS, Python, CUDA, PyTorch versions)
-* The exact notebook / script and cell that failed
-* Any error messages
-
-in your report so we can address them in the camera-ready version.
