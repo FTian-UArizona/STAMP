@@ -12,7 +12,7 @@ STAMP is a framework for **task-aware, sensitivity-aware privacy budgeting** for
 * A **Polar mechanism** that adds noise only to the **direction** of token embeddings (on the unit sphere)
 * Standard **metric-LDP** guarantees per token, lifted to sequences via parallel composition
 
-We compare STAMP against a **uniform-budget Laplace mechanism**.
+We compare STAMP against a **uniform budget** (the same ε for every token), and the Polar mechanism against an **isotropic Laplace** mechanism.
 
 ---
 
@@ -36,7 +36,7 @@ The most relevant files are:
     These require a local GPT-2 model / an OpenAI API key respectively.
 
 * `fantasy_squad.json`
-  Synthetic SQuAD-style QA dataset (same JSON structure as SQuAD: `data -> paragraphs -> {context, qas}`) used in some experiments. (To make sure the models have not learned these sentences from internal memory.)
+  Synthetic SQuAD-style QA dataset (same JSON structure as SQuAD: `data -> paragraphs -> {context, qas}`) used for the QA experiments. See [SQuAD vs. Fantasy SQuAD](#squad-vs-fantasy-squad) below.
 
 * Notebooks (for experiments and figures)
 
@@ -44,15 +44,34 @@ The most relevant files are:
 
 ## Datasets
 
-The notebooks use standard HuggingFace datasets plus one synthetic file:
+The notebooks use standard Hugging Face datasets plus one synthetic QA set:
 
-* **AG News**: loaded via `datasets.load_dataset("ag_news")`
-* **Yelp**: loaded via `datasets.load_dataset("yelp")`
-* **SQuAD / FantasySQuAD**:
+* **AG News**: `datasets.load_dataset("ag_news")`
+* **Yelp**: `datasets.load_dataset("Yelp/yelp_review_full")`
+* **Fantasy SQuAD**: `Fantasy_Dataset/fantasy_squad.json` in this repo, also on Hugging Face as
+  [`Setpember/Fantasy-SQUAD_10`](https://huggingface.co/datasets/Setpember/Fantasy-SQUAD_10)
 
-  * `fantasy_squad.json` from this repo, which follows the SQuAD format
+### SQuAD vs. Fantasy SQuAD
 
-   
+The paper reports question answering (QA) on SQuAD (Rajpurkar et al., 2016). SQuAD is built from
+Wikipedia, and the LLM that answers the questions (gpt-4o-mini) has likely seen it during pretraining.
+It can then answer from memory even when the private context has been heavily noised. That makes a
+privacy mechanism look better than it really is.
+
+To remove this effect we built **Fantasy SQuAD** (Appendix C of the paper). We prompted GPT-4 to write
+fictional encyclopedia entries and short stories about invented cities, events, and species, with
+made-up names. Each passage comes with questions that can be answered only by reading that passage.
+
+| | SQuAD | Fantasy SQuAD |
+| --- | --- | --- |
+| Source | Wikipedia articles | Fictional passages written by GPT-4 |
+| Can the evaluator answer from memory? | Possibly | No, the facts are made up |
+| Size | About 10,600 validation questions | 10 passages, 50 questions |
+| Format | `context`, `question`, `answers` | Same as SQuAD |
+
+The QA notebooks in `Fantasy_Dataset/` load Fantasy SQuAD. Because the format is the same, you can run
+the same pipeline on the original SQuAD by changing the dataset line to
+`load_dataset("squad", split="validation")`.
 
 ## Core mechanisms and STAMP
 
@@ -75,6 +94,7 @@ All mechanism implementations live in `functions.py`. At a high level:
   * Given a context, a question, and a tokenizer/embedding table, STAMP:
 
     1. Assigns tokens to **four groups** based on sensitivity (NER/PII) and task-importance (embedding similarity to a task representation).
+       In the notebooks, sensitive tokens are found with light rules (capitalized words, emails, and numbers). You can plug in a full NER tagger through the `ner_fn` argument.
     2. Maps each group to a **per-token ε**.
     3. Calls the chosen perturbation mechanism **per token** with the corresponding ε.
   * There are variants for:
