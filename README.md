@@ -2,8 +2,9 @@
 
 This repository contains the **reference implementation** for the paper
 
-> **STAMP: Selective Task-Aware Mechanism for Text Privacy**
-> (Anonymous submission)
+> **STAMP: Selective Task-Aware Mechanism for Text Privacy**  
+> Fengwei Tian, Payel Bhattacharjee, Heidi Hanson, Geoffrey D. Rubin, Joseph Y. Lo, Ravi Tandon  
+> EACL 2026 (Long Papers), **Oral** · [Paper](https://aclanthology.org/2026.eacl-long.61/)
 
 STAMP is a framework for **task-aware, sensitivity-aware privacy budgeting** for text under local differential privacy (LDP). It combines:
 
@@ -104,3 +105,21 @@ The notebooks show concrete usage examples of these functions.
 
   Users are free to change this profile; STAMP only requires a **relative ordering** and a base scale.
 
+---
+
+## Citation
+
+```bibtex
+@inproceedings{tian-etal-2026-stamp,
+    title = "{STAMP}: Selective Task-Aware Mechanism for Text Privacy",
+    author = "Tian, Fengwei and Bhattacharjee, Payel and Hanson, Heidi and Rubin, Geoffrey D and Lo, Joseph Y. and Tandon, Ravi",
+    booktitle = "Proceedings of the 19th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.eacl-long.61/",
+    doi = "10.18653/v1/2026.eacl-long.61",
+    pages = "1319--1333"
+}
+```
